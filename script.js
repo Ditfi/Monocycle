@@ -1,6 +1,6 @@
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
+        const faqItem = button.closest('.faq-item');
         faqItem.classList.toggle('active');
     });
 });
@@ -13,12 +13,5 @@ thumbs.forEach(thumb => {
         const currentMainSrc = mainPhoto.src;
         mainPhoto.src = thumb.src;
         thumb.src = currentMainSrc;
-    });
-});
-
-document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
     });
 });
