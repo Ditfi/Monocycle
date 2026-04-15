@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #ff9800;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: #999;
+    padding: 5px 10px;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.product-showcase {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.side-images img {
+    display: block;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.main-image img {
+    width: 400px;
+}
+
+/* FAQ Стили */
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background: #eee;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: white;
+}
+
+.faq-answer p {
+    padding: 15px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+/* Форма */
+.order-form {
+    background-color: #ffb74d;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-inputs input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 30%;
+}
+
+.submit-btn {
+    background: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.clickable-thumb {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.clickable-thumb:hover {
+    transform: scale(1.05);
+    border: 1px solid #ff9800;
+}
