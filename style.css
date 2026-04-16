@@ -115,3 +115,8 @@ nav a {
     transform: scale(1.05);
     border: 1px solid #ff9800;
 }
+
+nav a:hover, .faq-question:hover, .submit-btn:hover {
+    background-color: #555 !important;
+    color: white !important;
+}
